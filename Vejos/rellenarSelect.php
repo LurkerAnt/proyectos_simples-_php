@@ -16,18 +16,13 @@
 </head>
 <body>
 <select name="selector" id="selector">
-
         <?php
-            for ($i=0;$i<count($nombres);$i++){
+            for ($i=0;$i<6;$i++){
                 ?>
                 <!--ESTO SE LO TRAGA TODO, LIKE RLY-->
-                <option value="persona"><?=$ids[$i], " " ,$nombres[$i]?></option>
+                <option value= "<?php=$ids[$i].''.$nombres[$i]?>"><?php=$ids[$i].''.$nombres[$i]?></option>
 
-            <?}
+            <?php }
         ?>
-
-
 </select>
-
-
 </body>
